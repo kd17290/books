@@ -23,7 +23,7 @@ A step by step series of examples that tell you how to get a development env run
 
 Clone the project:
 ```
-git clone <git URL>
+git clone git@github.com:kd17290/books.git
 ```
 
 Change directory to cloned project:
