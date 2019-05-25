@@ -48,41 +48,6 @@
 			"response": []
 		},
 		{
-			"name": "List of books",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "localhost:8000/api/v1/books/",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"v1",
-						"books",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Create book",
 			"request": {
 				"method": "POST",
@@ -115,7 +80,7 @@
 			"response": []
 		},
 		{
-			"name": "Retrive a book",
+			"name": "List of books",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -125,16 +90,16 @@
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"type": "text",
-						"value": "application/json"
+						"value": "application/json",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"My First Updated Book\",\n    \"isbn\": \"123-3213243567\",\n    \"authors\": [\n        \"John Doe\"\n    ],\n    \"number_of_pages\": 350,\n    \"publisher\": \"Acme Books Publishing\",\n    \"country\": \"United States\",\n    \"release_date\": \"2019-01-01\"\n}"
+					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:8000/api/v1/books/1/",
+					"raw": "localhost:8000/api/v1/books/",
 					"host": [
 						"localhost"
 					],
@@ -143,7 +108,6 @@
 						"api",
 						"v1",
 						"books",
-						"1",
 						""
 					]
 				}
@@ -184,9 +148,12 @@
 			"response": []
 		},
 		{
-			"name": "Delete a book",
+			"name": "Retrive a book",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
-				"method": "DELETE",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -217,12 +184,9 @@
 			"response": []
 		},
 		{
-			"name": "Retrive a book",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
+			"name": "Delete a book",
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": [
 					{
 						"key": "Content-Type",
