@@ -1,0 +1,18 @@
+.idea/
+venv/
+Pipfile.lock
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+### db sqlite ###
+db.sqlite3

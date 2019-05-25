@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "093753c2-92cc-4fe7-b976-1fbaeed8f07d",
+		"name": "books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "External Books API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/books/external-books/?name=A Game of Thrones",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"external-books",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "A Game of Thrones"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/books/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"My First Updated Book\",\n    \"isbn\": \"123-3213243567\",\n    \"authors\": [\n        \"John Doe\"\n    ],\n    \"number_of_pages\": 350,\n    \"publisher\": \"Acme Books Publishing\",\n    \"country\": \"United States\",\n    \"release_date\": \"2019-01-01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/books/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrive a book",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"My First Updated Book\",\n    \"isbn\": \"123-3213243567\",\n    \"authors\": [\n        \"John Doe\"\n    ],\n    \"number_of_pages\": 350,\n    \"publisher\": \"Acme Books Publishing\",\n    \"country\": \"United States\",\n    \"release_date\": \"2019-01-01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/books/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a book",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"My First Updated Book\",\n    \"isbn\": \"123-3213243567\",\n    \"authors\": [\n        \"John Doe\"\n    ],\n    \"number_of_pages\": 350,\n    \"publisher\": \"Acme Books Publishing\",\n    \"country\": \"United States\",\n    \"release_date\": \"2019-01-01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/books/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a book",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"My First Updated Book\",\n    \"isbn\": \"123-3213243567\",\n    \"authors\": [\n        \"John Doe\"\n    ],\n    \"number_of_pages\": 350,\n    \"publisher\": \"Acme Books Publishing\",\n    \"country\": \"United States\",\n    \"release_date\": \"2019-01-01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/books/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrive a book",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"My First Updated Book\",\n    \"isbn\": \"123-3213243567\",\n    \"authors\": [\n        \"John Doe\"\n    ],\n    \"number_of_pages\": 350,\n    \"publisher\": \"Acme Books Publishing\",\n    \"country\": \"United States\",\n    \"release_date\": \"2019-01-01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/books/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
